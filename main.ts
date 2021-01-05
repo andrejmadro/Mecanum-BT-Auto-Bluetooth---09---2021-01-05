@@ -99,7 +99,7 @@ control.onEvent(EventBusSource.MES_DPAD_CONTROLLER_ID, EventBusValue.MICROBIT_EV
             . . # . .
             . . # . .
             `)
-        wuKong.mecanumSpin(wuKong.TurnList.Left, 100)
+        wuKong.mecanumDrift(wuKong.TurnList.Right)
     } else if (control.eventValue() == EventBusValue.MES_DPAD_BUTTON_1_UP) {
         basic.showLeds(`
             . # # # #
@@ -117,7 +117,7 @@ control.onEvent(EventBusSource.MES_DPAD_CONTROLLER_ID, EventBusValue.MICROBIT_EV
             . # . . .
             # # # # .
             `)
-        wuKong.mecanumSpin(wuKong.TurnList.Right, 100)
+        wuKong.mecanumDrift(wuKong.TurnList.Left)
     } else if (control.eventValue() == EventBusValue.MES_DPAD_BUTTON_2_UP) {
         basic.showLeds(`
             . # # # #
@@ -135,7 +135,7 @@ control.onEvent(EventBusSource.MES_DPAD_CONTROLLER_ID, EventBusValue.MICROBIT_EV
             . # . . #
             . . # # .
             `)
-        wuKong.mecanumDrift(wuKong.TurnList.Right)
+        wuKong.mecanumSpin(wuKong.TurnList.Left, 100)
     } else if (control.eventValue() == EventBusValue.MES_DPAD_BUTTON_3_UP) {
         basic.showLeds(`
             . # # # #
@@ -153,7 +153,7 @@ control.onEvent(EventBusSource.MES_DPAD_CONTROLLER_ID, EventBusValue.MICROBIT_EV
             . . # . .
             . . # . .
             `)
-        wuKong.mecanumDrift(wuKong.TurnList.Left)
+        wuKong.mecanumSpin(wuKong.TurnList.Right, 100)
     } else if (control.eventValue() == EventBusValue.MES_DPAD_BUTTON_4_UP) {
         basic.showLeds(`
             . # # # #
@@ -168,7 +168,7 @@ control.onEvent(EventBusSource.MES_DPAD_CONTROLLER_ID, EventBusValue.MICROBIT_EV
 basic.showLeds(`
     # . . . .
     # . . . .
-    . . . . .
+    # . . . #
     . . . . #
     . . . . #
     `)
