@@ -27,7 +27,12 @@ control.onEvent(EventBusSource.MES_DPAD_CONTROLLER_ID, EventBusValue.MICROBIT_EV
             # . . . #
             `)
         wuKong.mecanumRun(wuKong.RunList.Front, 100)
-        strip.showColor(neopixel.colors(NeoPixelColors.White))
+        strip.setBrightness(150)
+        strip.setPixelColor(0, neopixel.colors(NeoPixelColors.White))
+        strip.setPixelColor(1, neopixel.colors(NeoPixelColors.White))
+        strip.setBrightness(30)
+        strip.setPixelColor(2, neopixel.colors(NeoPixelColors.Red))
+        strip.setPixelColor(3, neopixel.colors(NeoPixelColors.Red))
     } else if (control.eventValue() == EventBusValue.MES_DPAD_BUTTON_A_UP) {
         basic.showLeds(`
             . # # # #
@@ -37,6 +42,11 @@ control.onEvent(EventBusSource.MES_DPAD_CONTROLLER_ID, EventBusValue.MICROBIT_EV
             # # # # .
             `)
         wuKong.mecanumRun(wuKong.RunList.stop, 100)
+        strip.setBrightness(10)
+        strip.setPixelColor(0, neopixel.colors(NeoPixelColors.White))
+        strip.setPixelColor(1, neopixel.colors(NeoPixelColors.White))
+        strip.setPixelColor(2, neopixel.colors(NeoPixelColors.Red))
+        strip.setPixelColor(3, neopixel.colors(NeoPixelColors.Red))
     } else if (control.eventValue() == EventBusValue.MES_DPAD_BUTTON_B_DOWN) {
         basic.showLeds(`
             # # # . .
@@ -46,7 +56,12 @@ control.onEvent(EventBusSource.MES_DPAD_CONTROLLER_ID, EventBusValue.MICROBIT_EV
             # # # . .
             `)
         wuKong.mecanumRun(wuKong.RunList.rear, 100)
-        strip.showColor(neopixel.colors(NeoPixelColors.Red))
+        strip.setBrightness(30)
+        strip.setPixelColor(0, neopixel.colors(NeoPixelColors.White))
+        strip.setPixelColor(1, neopixel.colors(NeoPixelColors.White))
+        strip.setPixelColor(2, neopixel.colors(NeoPixelColors.Red))
+        strip.setBrightness(250)
+        strip.setPixelColor(3, neopixel.colors(NeoPixelColors.White))
     } else if (control.eventValue() == EventBusValue.MES_DPAD_BUTTON_B_UP) {
         basic.showLeds(`
             . # # # #
@@ -56,6 +71,11 @@ control.onEvent(EventBusSource.MES_DPAD_CONTROLLER_ID, EventBusValue.MICROBIT_EV
             # # # # .
             `)
         wuKong.mecanumRun(wuKong.RunList.stop, 100)
+        strip.setBrightness(10)
+        strip.setPixelColor(0, neopixel.colors(NeoPixelColors.White))
+        strip.setPixelColor(1, neopixel.colors(NeoPixelColors.White))
+        strip.setPixelColor(2, neopixel.colors(NeoPixelColors.Red))
+        strip.setPixelColor(3, neopixel.colors(NeoPixelColors.Red))
     } else if (control.eventValue() == EventBusValue.MES_DPAD_BUTTON_C_DOWN) {
         basic.showLeds(`
             . # # # .
@@ -65,7 +85,31 @@ control.onEvent(EventBusSource.MES_DPAD_CONTROLLER_ID, EventBusValue.MICROBIT_EV
             . # # # .
             `)
         wuKong.mecanumRun(wuKong.RunList.right, 100)
-        strip.showColor(neopixel.colors(NeoPixelColors.Yellow))
+        strip.setBrightness(150)
+        strip.setPixelColor(0, neopixel.colors(NeoPixelColors.White))
+        strip.setPixelColor(1, neopixel.colors(NeoPixelColors.White))
+        strip.setBrightness(30)
+        strip.setPixelColor(2, neopixel.colors(NeoPixelColors.Red))
+        strip.setPixelColor(3, neopixel.colors(NeoPixelColors.Red))
+        strip.setBrightness(250)
+        strip.setPixelColor(0, neopixel.colors(NeoPixelColors.Yellow))
+        strip.setPixelColor(3, neopixel.colors(NeoPixelColors.Yellow))
+        basic.pause(100)
+        strip.setBrightness(1)
+        strip.setPixelColor(0, neopixel.colors(NeoPixelColors.Black))
+        strip.setPixelColor(3, neopixel.colors(NeoPixelColors.Black))
+        basic.pause(100)
+        strip.setBrightness(250)
+        strip.setPixelColor(0, neopixel.colors(NeoPixelColors.Yellow))
+        strip.setPixelColor(3, neopixel.colors(NeoPixelColors.Yellow))
+        basic.pause(100)
+        strip.setBrightness(1)
+        strip.setPixelColor(0, neopixel.colors(NeoPixelColors.Black))
+        strip.setPixelColor(3, neopixel.colors(NeoPixelColors.Black))
+        basic.pause(100)
+        strip.setBrightness(250)
+        strip.setPixelColor(0, neopixel.colors(NeoPixelColors.Yellow))
+        strip.setPixelColor(3, neopixel.colors(NeoPixelColors.Yellow))
     } else if (control.eventValue() == EventBusValue.MES_DPAD_BUTTON_C_UP) {
         basic.showLeds(`
             . # # # #
@@ -75,7 +119,11 @@ control.onEvent(EventBusSource.MES_DPAD_CONTROLLER_ID, EventBusValue.MICROBIT_EV
             # # # # .
             `)
         wuKong.mecanumRun(wuKong.RunList.stop, 100)
-        strip.showColor(neopixel.colors(NeoPixelColors.Orange))
+        strip.setBrightness(10)
+        strip.setPixelColor(0, neopixel.colors(NeoPixelColors.White))
+        strip.setPixelColor(1, neopixel.colors(NeoPixelColors.White))
+        strip.setPixelColor(2, neopixel.colors(NeoPixelColors.Red))
+        strip.setPixelColor(3, neopixel.colors(NeoPixelColors.Red))
     } else if (control.eventValue() == EventBusValue.MES_DPAD_BUTTON_D_DOWN) {
         basic.showLeds(`
             # # # . .
@@ -85,7 +133,31 @@ control.onEvent(EventBusSource.MES_DPAD_CONTROLLER_ID, EventBusValue.MICROBIT_EV
             # # # . .
             `)
         wuKong.mecanumRun(wuKong.RunList.left, 100)
-        strip.showColor(neopixel.colors(NeoPixelColors.Red))
+        strip.setBrightness(150)
+        strip.setPixelColor(0, neopixel.colors(NeoPixelColors.White))
+        strip.setPixelColor(1, neopixel.colors(NeoPixelColors.White))
+        strip.setBrightness(30)
+        strip.setPixelColor(2, neopixel.colors(NeoPixelColors.Red))
+        strip.setPixelColor(3, neopixel.colors(NeoPixelColors.Red))
+        strip.setBrightness(250)
+        strip.setPixelColor(1, neopixel.colors(NeoPixelColors.Yellow))
+        strip.setPixelColor(2, neopixel.colors(NeoPixelColors.Yellow))
+        basic.pause(100)
+        strip.setBrightness(1)
+        strip.setPixelColor(1, neopixel.colors(NeoPixelColors.Black))
+        strip.setPixelColor(2, neopixel.colors(NeoPixelColors.Black))
+        basic.pause(100)
+        strip.setBrightness(250)
+        strip.setPixelColor(1, neopixel.colors(NeoPixelColors.Yellow))
+        strip.setPixelColor(2, neopixel.colors(NeoPixelColors.Yellow))
+        basic.pause(100)
+        strip.setBrightness(1)
+        strip.setPixelColor(1, neopixel.colors(NeoPixelColors.Black))
+        strip.setPixelColor(2, neopixel.colors(NeoPixelColors.Black))
+        basic.pause(100)
+        strip.setBrightness(250)
+        strip.setPixelColor(1, neopixel.colors(NeoPixelColors.Yellow))
+        strip.setPixelColor(2, neopixel.colors(NeoPixelColors.Yellow))
     } else if (control.eventValue() == EventBusValue.MES_DPAD_BUTTON_D_UP) {
         basic.showLeds(`
             . # # # #
@@ -95,6 +167,11 @@ control.onEvent(EventBusSource.MES_DPAD_CONTROLLER_ID, EventBusValue.MICROBIT_EV
             # # # # .
             `)
         wuKong.mecanumRun(wuKong.RunList.stop, 100)
+        strip.setBrightness(10)
+        strip.setPixelColor(0, neopixel.colors(NeoPixelColors.White))
+        strip.setPixelColor(1, neopixel.colors(NeoPixelColors.White))
+        strip.setPixelColor(2, neopixel.colors(NeoPixelColors.Red))
+        strip.setPixelColor(3, neopixel.colors(NeoPixelColors.Red))
     }
     if (control.eventValue() == EventBusValue.MES_DPAD_BUTTON_1_DOWN) {
         basic.showLeds(`
