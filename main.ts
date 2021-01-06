@@ -33,6 +33,7 @@ control.onEvent(EventBusSource.MES_DPAD_CONTROLLER_ID, EventBusValue.MICROBIT_EV
         strip.setBrightness(30)
         strip.setPixelColor(2, neopixel.colors(NeoPixelColors.Red))
         strip.setPixelColor(3, neopixel.colors(NeoPixelColors.Red))
+        strip.show()
     } else if (control.eventValue() == EventBusValue.MES_DPAD_BUTTON_A_UP) {
         basic.showLeds(`
             . # # # #
@@ -47,6 +48,7 @@ control.onEvent(EventBusSource.MES_DPAD_CONTROLLER_ID, EventBusValue.MICROBIT_EV
         strip.setPixelColor(1, neopixel.colors(NeoPixelColors.White))
         strip.setPixelColor(2, neopixel.colors(NeoPixelColors.Red))
         strip.setPixelColor(3, neopixel.colors(NeoPixelColors.Red))
+        strip.show()
     } else if (control.eventValue() == EventBusValue.MES_DPAD_BUTTON_B_DOWN) {
         basic.showLeds(`
             # # # . .
@@ -56,12 +58,20 @@ control.onEvent(EventBusSource.MES_DPAD_CONTROLLER_ID, EventBusValue.MICROBIT_EV
             # # # . .
             `)
         wuKong.mecanumRun(wuKong.RunList.rear, 100)
-        strip.setBrightness(30)
+        music.playTone(262, music.beat(BeatFraction.Half))
+        music.playTone(330, music.beat(BeatFraction.Half))
+        music.playTone(294, music.beat(BeatFraction.Half))
+        strip.setBrightness(15)
         strip.setPixelColor(0, neopixel.colors(NeoPixelColors.White))
         strip.setPixelColor(1, neopixel.colors(NeoPixelColors.White))
         strip.setPixelColor(2, neopixel.colors(NeoPixelColors.Red))
+        strip.show()
         strip.setBrightness(250)
         strip.setPixelColor(3, neopixel.colors(NeoPixelColors.White))
+        strip.show()
+        music.playTone(262, music.beat(BeatFraction.Half))
+        music.playTone(330, music.beat(BeatFraction.Half))
+        music.playTone(294, music.beat(BeatFraction.Half))
     } else if (control.eventValue() == EventBusValue.MES_DPAD_BUTTON_B_UP) {
         basic.showLeds(`
             . # # # #
@@ -76,6 +86,7 @@ control.onEvent(EventBusSource.MES_DPAD_CONTROLLER_ID, EventBusValue.MICROBIT_EV
         strip.setPixelColor(1, neopixel.colors(NeoPixelColors.White))
         strip.setPixelColor(2, neopixel.colors(NeoPixelColors.Red))
         strip.setPixelColor(3, neopixel.colors(NeoPixelColors.Red))
+        strip.show()
     } else if (control.eventValue() == EventBusValue.MES_DPAD_BUTTON_C_DOWN) {
         basic.showLeds(`
             . # # # .
@@ -88,28 +99,35 @@ control.onEvent(EventBusSource.MES_DPAD_CONTROLLER_ID, EventBusValue.MICROBIT_EV
         strip.setBrightness(150)
         strip.setPixelColor(0, neopixel.colors(NeoPixelColors.White))
         strip.setPixelColor(1, neopixel.colors(NeoPixelColors.White))
+        strip.show()
         strip.setBrightness(30)
         strip.setPixelColor(2, neopixel.colors(NeoPixelColors.Red))
         strip.setPixelColor(3, neopixel.colors(NeoPixelColors.Red))
+        strip.show()
         strip.setBrightness(250)
-        strip.setPixelColor(0, neopixel.colors(NeoPixelColors.Yellow))
-        strip.setPixelColor(3, neopixel.colors(NeoPixelColors.Yellow))
+        strip.setPixelColor(1, neopixel.colors(NeoPixelColors.Yellow))
+        strip.setPixelColor(2, neopixel.colors(NeoPixelColors.Yellow))
+        strip.show()
         basic.pause(100)
         strip.setBrightness(1)
-        strip.setPixelColor(0, neopixel.colors(NeoPixelColors.Black))
-        strip.setPixelColor(3, neopixel.colors(NeoPixelColors.Black))
+        strip.setPixelColor(1, neopixel.colors(NeoPixelColors.Black))
+        strip.setPixelColor(2, neopixel.colors(NeoPixelColors.Black))
+        strip.show()
         basic.pause(100)
         strip.setBrightness(250)
-        strip.setPixelColor(0, neopixel.colors(NeoPixelColors.Yellow))
-        strip.setPixelColor(3, neopixel.colors(NeoPixelColors.Yellow))
+        strip.setPixelColor(1, neopixel.colors(NeoPixelColors.Yellow))
+        strip.setPixelColor(2, neopixel.colors(NeoPixelColors.Yellow))
+        strip.show()
         basic.pause(100)
         strip.setBrightness(1)
-        strip.setPixelColor(0, neopixel.colors(NeoPixelColors.Black))
-        strip.setPixelColor(3, neopixel.colors(NeoPixelColors.Black))
+        strip.setPixelColor(1, neopixel.colors(NeoPixelColors.Black))
+        strip.setPixelColor(2, neopixel.colors(NeoPixelColors.Black))
+        strip.show()
         basic.pause(100)
         strip.setBrightness(250)
-        strip.setPixelColor(0, neopixel.colors(NeoPixelColors.Yellow))
-        strip.setPixelColor(3, neopixel.colors(NeoPixelColors.Yellow))
+        strip.setPixelColor(1, neopixel.colors(NeoPixelColors.Yellow))
+        strip.setPixelColor(2, neopixel.colors(NeoPixelColors.Yellow))
+        strip.show()
     } else if (control.eventValue() == EventBusValue.MES_DPAD_BUTTON_C_UP) {
         basic.showLeds(`
             . # # # #
@@ -124,6 +142,7 @@ control.onEvent(EventBusSource.MES_DPAD_CONTROLLER_ID, EventBusValue.MICROBIT_EV
         strip.setPixelColor(1, neopixel.colors(NeoPixelColors.White))
         strip.setPixelColor(2, neopixel.colors(NeoPixelColors.Red))
         strip.setPixelColor(3, neopixel.colors(NeoPixelColors.Red))
+        strip.show()
     } else if (control.eventValue() == EventBusValue.MES_DPAD_BUTTON_D_DOWN) {
         basic.showLeds(`
             # # # . .
@@ -136,28 +155,35 @@ control.onEvent(EventBusSource.MES_DPAD_CONTROLLER_ID, EventBusValue.MICROBIT_EV
         strip.setBrightness(150)
         strip.setPixelColor(0, neopixel.colors(NeoPixelColors.White))
         strip.setPixelColor(1, neopixel.colors(NeoPixelColors.White))
+        strip.show()
         strip.setBrightness(30)
         strip.setPixelColor(2, neopixel.colors(NeoPixelColors.Red))
         strip.setPixelColor(3, neopixel.colors(NeoPixelColors.Red))
+        strip.show()
         strip.setBrightness(250)
-        strip.setPixelColor(1, neopixel.colors(NeoPixelColors.Yellow))
-        strip.setPixelColor(2, neopixel.colors(NeoPixelColors.Yellow))
+        strip.setPixelColor(0, neopixel.colors(NeoPixelColors.Yellow))
+        strip.setPixelColor(3, neopixel.colors(NeoPixelColors.Yellow))
+        strip.show()
         basic.pause(100)
         strip.setBrightness(1)
-        strip.setPixelColor(1, neopixel.colors(NeoPixelColors.Black))
-        strip.setPixelColor(2, neopixel.colors(NeoPixelColors.Black))
+        strip.setPixelColor(0, neopixel.colors(NeoPixelColors.Black))
+        strip.setPixelColor(3, neopixel.colors(NeoPixelColors.Black))
+        strip.show()
         basic.pause(100)
         strip.setBrightness(250)
-        strip.setPixelColor(1, neopixel.colors(NeoPixelColors.Yellow))
-        strip.setPixelColor(2, neopixel.colors(NeoPixelColors.Yellow))
+        strip.setPixelColor(0, neopixel.colors(NeoPixelColors.Yellow))
+        strip.setPixelColor(3, neopixel.colors(NeoPixelColors.Yellow))
+        strip.show()
         basic.pause(100)
         strip.setBrightness(1)
-        strip.setPixelColor(1, neopixel.colors(NeoPixelColors.Black))
-        strip.setPixelColor(2, neopixel.colors(NeoPixelColors.Black))
+        strip.setPixelColor(0, neopixel.colors(NeoPixelColors.Black))
+        strip.setPixelColor(3, neopixel.colors(NeoPixelColors.Black))
+        strip.show()
         basic.pause(100)
         strip.setBrightness(250)
-        strip.setPixelColor(1, neopixel.colors(NeoPixelColors.Yellow))
-        strip.setPixelColor(2, neopixel.colors(NeoPixelColors.Yellow))
+        strip.setPixelColor(0, neopixel.colors(NeoPixelColors.Yellow))
+        strip.setPixelColor(3, neopixel.colors(NeoPixelColors.Yellow))
+        strip.show()
     } else if (control.eventValue() == EventBusValue.MES_DPAD_BUTTON_D_UP) {
         basic.showLeds(`
             . # # # #
@@ -172,6 +198,7 @@ control.onEvent(EventBusSource.MES_DPAD_CONTROLLER_ID, EventBusValue.MICROBIT_EV
         strip.setPixelColor(1, neopixel.colors(NeoPixelColors.White))
         strip.setPixelColor(2, neopixel.colors(NeoPixelColors.Red))
         strip.setPixelColor(3, neopixel.colors(NeoPixelColors.Red))
+        strip.show()
     }
     if (control.eventValue() == EventBusValue.MES_DPAD_BUTTON_1_DOWN) {
         basic.showLeds(`
@@ -255,9 +282,9 @@ let strip: neopixel.Strip = null
 basic.showLeds(`
     # . . . .
     # . . . .
-    # . . . #
-    . . . . #
-    . . . . #
+    # . . . .
+    . . . # #
+    . . . # #
     `)
 strip = neopixel.create(DigitalPin.P16, 4, NeoPixelMode.RGB)
 basic.forever(function () {
